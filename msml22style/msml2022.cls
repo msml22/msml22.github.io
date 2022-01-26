@@ -30,7 +30,7 @@
 \else
  \newcommand{\msmlauthor}[1]{\author{#1}}
  \iffinalsubmission
-  \editors{Joan Bruna, Jan S Hesthaven, Lenka Zdeborova}
+  \editors{Bin Dong, Qianxiao Li, Lei Wang, Zhi-Qin John Xu}
   \jmlrworkshop{3rd Annual Conference on Mathematical and Scientific Machine Learning}
  \fi
 \fi
