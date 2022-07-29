@@ -9,16 +9,21 @@
 
   <link rel="icon" type="image/png" href="/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
-
-
-
   <link rel="stylesheet" href="/css/style.min.ac4c2c0c10f611d5a3a3964287a921993d53abc4090edef061ce473149fbfb65.css">
-
-
-
-
 </head>
+
+<script type="text/javascript">
+
+  function display(id) {
+    var traget = document.getElementById(id);
+    if (traget.style.display == "none") {
+      traget.style.display = "";
+    } else {
+      traget.style.display = "none";
+    }
+  }  
+</script>
+
 
 <body class='page page-default-single'>
   <div id="main-menu-mobile" class="main-menu-mobile">
@@ -147,6 +152,7 @@
             <h3 id="dates">
               Aug 15th, 2022, Monday (GMT+8)
             </h3>
+
             9:35am-
             10:15am
 
@@ -159,6 +165,30 @@
                 Lili Ju (University of South Carolina)
               </li>
             </ul>
+
+            <input type="submit" value="Abstract" onclick="display('ab1')">
+            <div id="ab1" style="display:none">
+              <font>We estimate the error of the Deep Ritz Method for linear elliptic equations. For Dirichlet boundary
+                conditions, we
+                estimate the error when the boundary values are imposed through the boundary penalty method. Our results
+                apply to
+                arbitrary sets of ansatz functions and estimate the error in dependence of the optimization accuracy,
+                the approximation
+                capabilities of the ansatz class and -- in the case of Dirichlet boundary values -- the penalization
+                strength $\lambda$.
+                To the best of our knowledge, our results are presently the only ones in the literature that treat the
+                case of Dirichlet
+                boundary conditions in full generality, i.e., without a lower order term that leads to coercivity on all
+                of
+                $H^1(\Omega)$. Further, we discuss the implications of our results for ansatz classes which are given
+                through ReLU
+                networks and the relation to existing estimates for finite element functions. For high dimensional
+                problems our results
+                show that the favourable approximation capabilities of neural networks for smooth functions are
+                inherited by the Deep
+                Ritz Method.</font>
+            </div>
+            <hr />
             10:15am-
             10:55am
 

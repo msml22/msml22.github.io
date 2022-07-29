@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <title>HTML元素的显示与隐藏控制</title>
+    <script type="text/javascript">
+
+        function display(id) {
+            var traget = document.getElementById(id);
+            if (traget.style.display == "none") {
+                traget.style.display = "";
+            } else {
+                traget.style.display = "none";
+            }
+        }  
+    </script>
+</head>
+
+<body>
+    <input type="submit" value="在线支付" onclick="display('lb')">
+    <div id="lb" style="display:none">
+        <font>div属性：style ="display:none" 默认隐藏div</font>
+    </div>
+
+</body>
+
+</html>
