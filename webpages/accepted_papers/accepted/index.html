@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Accepted Papers - MSML22</title>
+  <title>Paper&Schedule - MSML22</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="icon" type="image/png" href="/favicon-32x32.png">
@@ -78,7 +78,7 @@
 
       <li class="Accepted Papers active">
         <a href="#">
-          <span>Accepted Papers</span>
+          <span>Paper & Schedule</span>
         </a>
       </li>
 
@@ -134,7 +134,7 @@
 
             <li class="Accepted Papers active">
               <a href="#">
-                <span>Accepted Papers</span>
+                <span>Paper & Schedule</span>
               </a>
             </li>
 
@@ -182,16 +182,30 @@
     <div class="container pb-6 pt-6 pt-md-5 pb-md-5">
       <div class="row justify-content-start">
         <div class="col-14 col-md-10">
-          <h1 class="title">Accepted Papers</h1>
+          <h1 class="title">Accepted Papers & Plenary Lecture</h1>
           <div class="content">
             <h4 id="note">Note:<br />
               1) Author(s) might revise the paper based on comments they receive during the conference.<br />
-              2) Authors with ‘*’ will present on the conference.
+              2) Authors with ‘*’ will present on the conference.<br />
+              3) Plenary lecture will be specially marked.<br />
+              4) Schedule can be downloaded <a href="../../../msml22papers/MSML2022 Conference Schedule.pdf">here</a>.
             </h4>
 
             <h3 id="dates">
               Aug 15th, 2022, Monday (GMT+8)
             </h3>
+            8:35am-
+            9:35am
+            <h4 id="dates">
+              Plenary Lecture
+            </h4>
+            <ul>
+              <li><strong>Learning operators using deep neural networks for multiphysics,
+                  multiscale, & multifidelity problems</strong>
+                <br />Lu Lu (University of Pennsylvania)
+              </li>
+            </ul>
+
 
             9:35am-
             10:15am
@@ -264,42 +278,68 @@
             11:35am
 
             <ul>
-              <li><strong><a href="../../../msml22papers/shrimp_preprint.pdf">SHRIMP: Sparser Random Feature Models via
-                    Iterative
-                    Magnitude Pruning</a></strong><br />Yuege Xie (University of Texas at Austin)*; Robert Shi
-                (University
-                of Texas at Austin); Hayden Schaeffer (Carnegie
-                Mellon University); Rachel Ward (University of Texas)
+              <li><strong><a href="../../../msml22papers/SpecNet2_msml_preprint.pdf">SpecNet2: Orthogonalization-free
+                    Spectral Embedding by
+                    Neural Networks</a></strong><br />Ziyu Chen (Duke University)*; Yingzhou Li (Fudan University);
+                Xiuyuan
+                Cheng (Duke University)
               </li>
-              <input class="abstract_btn" value="Abstract" onclick="display('ab3')">
-              <div id="ab3" style="display:none">
-                <font>Sparse shrunk additive models and sparse random feature models have been developed separately as
-                  methods to learn
-                  low-order functions, where there are few interactions between variables, but neither offers
-                  computational efficiency. On
-                  the other hand, $\ell_2$-based shrunk additive models are efficient but do not offer feature selection
-                  as the resulting
-                  coefficient vectors are dense. Inspired by the success of the iterative magnitude pruning technique in
-                  finding lottery
-                  tickets of neural networks, we propose a new method---Sparser Random Feature Models via IMP
-                  (ShRIMP)---to efficiently
-                  fit high-dimensional data with inherent low-dimensional structure in the form of sparse variable
-                  dependencies. Our
-                  method can be viewed as a combined process to construct and find sparse lottery tickets for two-layer
-                  dense networks. We
-                  explain the observed benefit of SHRIMP through a refined analysis of the generalization error for
-                  thresholded Basis
-                  Pursuit and resulting bounds on eigenvalues.
-                  From function approximation experiments on both synthetic data and real-world benchmark datasets, we
-                  show that SHRIMP
-                  obtains better than or competitive test accuracy compared to state-of-the-art sparse feature and
-                  additive methods such
-                  as SRFE-S, SSAM, and SALSA. Meanwhile, SHRIMP performs feature selection with low computational
-                  complexity and is robust
-                  to the pruning rate, indicating robustness in the structure of the obtained subnetworks. We gain
-                  insight into the
-                  lottery ticket hypothesis through SHRIMP by noting a correspondence between our model and
-                  weight/neuron subnetworks.</font>
+              <input class="abstract_btn" value="Abstract" onclick="display('ab20')">
+              <div id="ab20" style="display:none">
+                <font>Spectral methods which represent data points by eigenvectors of kernel matrices or graph Laplacian
+                  matrices have been a
+                  primary tool in unsupervised data analysis. In many application scenarios, parametrizing the spectral
+                  embedding by a
+                  neural network that can be trained over batches of data samples gives a promising way to achieve
+                  automatic out-of-sample
+                  extension as well as computational scalability. Such an approach was taken in the original paper of
+                  SpectralNet (Shaham
+                  et al. 2018), which we call SpecNet1. The current paper introduces a new neural network approach,
+                  named SpecNet2, to
+                  compute spectral embedding which optimizes an equivalent objective of the eigen-problem and removes
+                  the
+                  orthogonalization layer in SpecNet1. SpecNet2 also allows separating the sampling of rows and columns
+                  of the graph
+                  affinity matrix by tracking the neighbors of each data point through the gradient formula.
+                  Theoretically, we show that
+                  any local minimizer of the new orthogonalization-free objective reveals the leading eigenvectors.
+                  Furthermore, global
+                  convergence for this new orthogonalization-free objective using a batch-based gradient descent method
+                  is proved.
+                  Numerical experiments demonstrate the improved performance and computational efficiency of SpecNet2 on
+                  simulated data
+                  and image datasets.</font>
+              </div>
+            </ul>
+            11:35am-
+            12:15pm
+
+            <ul>
+              <li><strong><a href="../../../msml22papers/QMCTS.pdf">Monte Carlo Tree Search based Hybrid Optimization of
+                    Variational Quantum Circuits</a></strong><br /> Jiahao Yao (University of California, Berkeley)*;
+                Haoya
+                Li (Stanford University); Marin Bukov (University of California,
+                Berkeley); Lin Lin (University of California, Berkeley); Lexing Ying (Stanford University)
+              </li>
+              <input class="abstract_btn" value="Abstract" onclick="display('ab17')">
+              <div id="ab17" style="display:none">
+                <font>Variational quantum algorithms stand at the forefront of simulations on near-term and future
+                  fault-tolerant quantum
+                  devices. While most variational quantum algorithms involve only continuous optimization variables, the
+                  representation
+                  power of the variational ansatz can sometimes be significantly enhanced by adding certain discrete
+                  optimization
+                  variables, as is exemplified by the generalized quantum approximate optimization algorithm (QAOA).
+                  However, the hybrid
+                  discrete-continuous optimization problem in the generalized QAOA poses a challenge to the
+                  optimization. We propose a new
+                  algorithm called MCTS-QAOA, which combines a Monte Carlo tree search method with an improved policy
+                  gradient solver to
+                  optimize the discrete and continuous variables in the quantum circuit, respectively. We find that
+                  MCTS-QAOA has
+                  excellent noise-resilience properties, and can outperform prior algorithms in challenging instances of
+                  the generalized
+                  QAOA.</font>
               </div>
             </ul>
 
@@ -311,7 +351,8 @@
                     Identification of Nonlinear
                     Dynamics for Data-driven Modeling</a></strong><br />Kookjin Lee (Arizona State University)*;
                 Nathaniel A
-                Trask (Sandia National Laboratories)*; Panos Stinis (Pacific
+                Trask (Sandia National Laboratories)*; Nathaniel A Trask (Sandia
+                National Laboratories)*; Panos Stinis (Pacific
                 Northwest National Laboratory)
               </li>
               <input class="abstract_btn" value="Abstract" onclick="display('ab4')">
@@ -604,6 +645,17 @@
               </div>
             </ul>
 
+            1:30pm-
+            2:30pm
+            <h4 id="dates">
+              Plenary Lecture
+            </h4>
+            <ul>
+              <li><strong>Deep Approximation via Deep Learning</strong><br />Zuowei Shen (National University of
+                Singapore)
+              </li>
+            </ul>
+
             2:30pm-
             3:10pm
             <ul>
@@ -746,33 +798,39 @@
             9:50am
 
             <ul>
-              <li><strong><a href="../../../msml22papers/QMCTS.pdf">Monte Carlo Tree Search based Hybrid Optimization of
-                    Variational Quantum Circuits</a></strong><br /> Jiahao Yao (University of California, Berkeley)*;
-                Haoya
-                Li (Stanford University); Marin Bukov (University of California,
-                Berkeley); Lin Lin (University of California, Berkeley); Lexing Ying (Stanford University)
+              <li><strong><a href="../../../msml22papers/msml2022.pdf">Freeze and Chaos: NTK views on DNN Normalization,
+                    Checkerboard and Boundary Artifacts</a></strong><br /> Arthur Jacot (EPFL)*; Franck Gabriel (EPFL);
+                François Ged (EPFL); Clement Hongler (EPFL)
               </li>
-              <input class="abstract_btn" value="Abstract" onclick="display('ab17')">
-              <div id="ab17" style="display:none">
-                <font>Variational quantum algorithms stand at the forefront of simulations on near-term and future
-                  fault-tolerant quantum
-                  devices. While most variational quantum algorithms involve only continuous optimization variables, the
-                  representation
-                  power of the variational ansatz can sometimes be significantly enhanced by adding certain discrete
-                  optimization
-                  variables, as is exemplified by the generalized quantum approximate optimization algorithm (QAOA).
-                  However, the hybrid
-                  discrete-continuous optimization problem in the generalized QAOA poses a challenge to the
-                  optimization. We propose a new
-                  algorithm called MCTS-QAOA, which combines a Monte Carlo tree search method with an improved policy
-                  gradient solver to
-                  optimize the discrete and continuous variables in the quantum circuit, respectively. We find that
-                  MCTS-QAOA has
-                  excellent noise-resilience properties, and can outperform prior algorithms in challenging instances of
-                  the generalized
-                  QAOA.</font>
+              <input class="abstract_btn" value="Abstract" onclick="display('ab23')">
+              <div id="ab23" style="display:none">
+                <font>We analyze architectural features of Deep Neural Networks (DNNs) using the so-called Neural
+                  Tangent Kernel (NTK), which
+                  describes the training and generalization of DNNs in the infinite-width setting.<br />
+                  In this setting, we show that for fully-connected DNNs, as the depth grows, two regimes appear: freeze
+                  (or order), where
+                  the (scaled) NTK converges to a constant, and chaos, where it converges to a Kronecker delta. Extreme
+                  freeze slows down
+                  training while extreme chaos hinders generalization.<br />
+                  Using the scaled ReLU as a nonlinearity, we end up in the frozen regime.<br />
+                  In contrast, Layer Normalization brings the network into the chaotic regime. We observe a similar
+                  effect for Batch
+                  Normalization (BN) applied after the last nonlinearity.<br />
+                  We uncover the same freeze and chaos modes in Deep Deconvolutional Networks (DC-NNs). Our analysis
+                  explains the
+                  appearance of so-called checkerboard patterns and border artifacts. Moving the network into the
+                  chaotic regime prevents
+                  checkerboard patterns; we propose a graph-based parametrization which eliminates border artifacts;
+                  finally, we introduce
+                  a new layer-dependent learning rate to improve the convergence of DC-NNs.<br />
+                  We illustrate our findings on DCGANs: the frozen regime leads to a collapse of the generator to a
+                  checkerboard mode,
+                  which can be avoided by tuning the nonlinearity to reach the chaotic regime. As a result, we are able
+                  to obtain good
+                  quality samples for DCGANs without BN.</font>
               </div>
             </ul>
+
 
             9:50am-
             10:30am
@@ -845,39 +903,57 @@
             </ul>
             11:10am-
             11:50am
+
             <ul>
-              <li><strong><a href="../../../msml22papers/SpecNet2_msml_preprint.pdf">SpecNet2: Orthogonalization-free
-                    Spectral Embedding by
-                    Neural Networks</a></strong><br />Ziyu Chen (Duke University)*; Yingzhou Li (Fudan University);
-                Xiuyuan
-                Cheng (Duke University)
+              <li><strong><a href="../../../msml22papers/shrimp_preprint.pdf">SHRIMP: Sparser Random Feature Models via
+                    Iterative
+                    Magnitude Pruning</a></strong><br />Yuege Xie (University of Texas at Austin)*; Robert Shi
+                (University
+                of Texas at Austin); Hayden Schaeffer (Carnegie
+                Mellon University); Rachel Ward (University of Texas)
               </li>
-              <input class="abstract_btn" value="Abstract" onclick="display('ab20')">
-              <div id="ab20" style="display:none">
-                <font>Spectral methods which represent data points by eigenvectors of kernel matrices or graph Laplacian
-                  matrices have been a
-                  primary tool in unsupervised data analysis. In many application scenarios, parametrizing the spectral
-                  embedding by a
-                  neural network that can be trained over batches of data samples gives a promising way to achieve
-                  automatic out-of-sample
-                  extension as well as computational scalability. Such an approach was taken in the original paper of
-                  SpectralNet (Shaham
-                  et al. 2018), which we call SpecNet1. The current paper introduces a new neural network approach,
-                  named SpecNet2, to
-                  compute spectral embedding which optimizes an equivalent objective of the eigen-problem and removes
-                  the
-                  orthogonalization layer in SpecNet1. SpecNet2 also allows separating the sampling of rows and columns
-                  of the graph
-                  affinity matrix by tracking the neighbors of each data point through the gradient formula.
-                  Theoretically, we show that
-                  any local minimizer of the new orthogonalization-free objective reveals the leading eigenvectors.
-                  Furthermore, global
-                  convergence for this new orthogonalization-free objective using a batch-based gradient descent method
-                  is proved.
-                  Numerical experiments demonstrate the improved performance and computational efficiency of SpecNet2 on
-                  simulated data
-                  and image datasets.</font>
+              <input class="abstract_btn" value="Abstract" onclick="display('ab3')">
+              <div id="ab3" style="display:none">
+                <font>Sparse shrunk additive models and sparse random feature models have been developed separately as
+                  methods to learn
+                  low-order functions, where there are few interactions between variables, but neither offers
+                  computational efficiency. On
+                  the other hand, $\ell_2$-based shrunk additive models are efficient but do not offer feature selection
+                  as the resulting
+                  coefficient vectors are dense. Inspired by the success of the iterative magnitude pruning technique in
+                  finding lottery
+                  tickets of neural networks, we propose a new method---Sparser Random Feature Models via IMP
+                  (ShRIMP)---to efficiently
+                  fit high-dimensional data with inherent low-dimensional structure in the form of sparse variable
+                  dependencies. Our
+                  method can be viewed as a combined process to construct and find sparse lottery tickets for two-layer
+                  dense networks. We
+                  explain the observed benefit of SHRIMP through a refined analysis of the generalization error for
+                  thresholded Basis
+                  Pursuit and resulting bounds on eigenvalues.
+                  From function approximation experiments on both synthetic data and real-world benchmark datasets, we
+                  show that SHRIMP
+                  obtains better than or competitive test accuracy compared to state-of-the-art sparse feature and
+                  additive methods such
+                  as SRFE-S, SSAM, and SALSA. Meanwhile, SHRIMP performs feature selection with low computational
+                  complexity and is robust
+                  to the pruning rate, indicating robustness in the structure of the obtained subnetworks. We gain
+                  insight into the
+                  lottery ticket hypothesis through SHRIMP by noting a correspondence between our model and
+                  weight/neuron subnetworks.</font>
               </div>
+            </ul>
+
+            1:30pm-
+            2:30pm
+
+            <h4 id="dates">
+              Plenary Lecture
+            </h4>
+            <ul>
+              <li><strong>Rational Materials Design</strong><br />Konstantin Novoselov (National University of
+                Singapore)
+              </li>
             </ul>
 
             2:30pm-
@@ -939,47 +1015,6 @@
                   given a sampling budget compared to baseline sampling methods.</font>
               </div>
             </ul>
-            3:30pm-
-            4:10pm
-            <ul>
-              <li><strong><a href="../../../msml22papers/msml2022.pdf">Freeze and Chaos: NTK views on DNN Normalization,
-                    Checkerboard and Boundary Artifacts</a></strong><br /> Arthur Jacot (EPFL)*; Franck Gabriel (EPFL);
-                François Ged (EPFL); Clement Hongler (EPFL)
-              </li>
-              <input class="abstract_btn" value="Abstract" onclick="display('ab23')">
-              <div id="ab23" style="display:none">
-                <font>We analyze architectural features of Deep Neural Networks (DNNs) using the so-called Neural
-                  Tangent Kernel (NTK), which
-                  describes the training and generalization of DNNs in the infinite-width setting.<br />
-                  In this setting, we show that for fully-connected DNNs, as the depth grows, two regimes appear: freeze
-                  (or order), where
-                  the (scaled) NTK converges to a constant, and chaos, where it converges to a Kronecker delta. Extreme
-                  freeze slows down
-                  training while extreme chaos hinders generalization.<br />
-                  Using the scaled ReLU as a nonlinearity, we end up in the frozen regime.<br />
-                  In contrast, Layer Normalization brings the network into the chaotic regime. We observe a similar
-                  effect for Batch
-                  Normalization (BN) applied after the last nonlinearity.<br />
-                  We uncover the same freeze and chaos modes in Deep Deconvolutional Networks (DC-NNs). Our analysis
-                  explains the
-                  appearance of so-called checkerboard patterns and border artifacts. Moving the network into the
-                  chaotic regime prevents
-                  checkerboard patterns; we propose a graph-based parametrization which eliminates border artifacts;
-                  finally, we introduce
-                  a new layer-dependent learning rate to improve the convergence of DC-NNs.<br />
-                  We illustrate our findings on DCGANs: the frozen regime leads to a collapse of the generator to a
-                  checkerboard mode,
-                  which can be avoided by tuning the nonlinearity to reach the chaotic regime. As a result, we are able
-                  to obtain good
-                  quality samples for DCGANs without BN.</font>
-              </div>
-            </ul>
-
-
-
-
-
-
 
 
           </div>
